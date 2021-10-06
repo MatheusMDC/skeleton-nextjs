@@ -5,6 +5,7 @@ module.exports = {
     '!**/node_modules/**',
     '!**/.next/**',
     '!**/coverage/**',
+    '!**/.stryker-tmp/**',
   ],
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)
@@ -22,7 +23,8 @@ module.exports = {
     '^@/components/(.*)$': '<rootDir>/components/$1',
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
+  testMatch: ["<rootDir>/spec/__tests__/**/*.js?(x)", "<rootDir>/?(*.)(spec|test).js?(x)"],
+  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/', '<rootDir>/.stryker-tmp/'],
   transform: {
     // Use babel-jest to transpile tests with the next/babel preset
     // https://jestjs.io/docs/configuration#transform-objectstring-pathtotransformer--pathtotransformer-object

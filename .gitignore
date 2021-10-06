@@ -35,3 +35,7 @@ yarn-error.log*
 
 #IDE
 /.idea/
+
+# stryker temp files
+.stryker-tmp
+/reports/
