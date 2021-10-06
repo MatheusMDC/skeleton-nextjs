@@ -8,5 +8,5 @@ module.exports = {
   jest: {
       config: require('./jest.config'),
   },
-  mutate: ["spec/**/*.test.{js,jsx}"]
+  mutate: ["src/**/*.{js,jsx}"]
 };
