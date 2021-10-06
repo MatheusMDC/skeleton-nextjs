@@ -14,3 +14,9 @@ npm run start
 ```bash
 npm test
 ```
+
+## Run Mutation Tests
+
+```bash
+npm test:mutation
+```
