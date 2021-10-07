@@ -1,13 +1,24 @@
 import Head from 'next/head';
 import styles from './index.module.css';
+import React from 'react';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 const Home = () => (
-	<div className={styles.container}>
+	<div className="min-h-screen bg-gray-300 py-6 flex flex-col justify-center sm:py-12">
 		<Head>
 			<title>Create Next App</title>
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
-
+		<Stack direction="row" spacing={2} className="justify-center">
+			<Button variant="contained" data-testid="material">Material</Button>
+			<Button variant="contained" disabled>
+				Design
+			</Button>
+			<Button variant="contained" href="#contained-buttons">
+				Component
+			</Button>
+		</Stack>
 		<main>
 			<h1 className={styles.title}>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
