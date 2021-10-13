@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import React from 'react';
+const AsyncAutocompleteInput = dynamic(() => import('../components/asyncAutocompleteInput'));
 
 const Home = () => {
 	return (
@@ -10,10 +11,7 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<h1>Home</h1>
-				<Link href="/negociacao">
-					Negociação
-				</Link>
+				<AsyncAutocompleteInput/>
 			</main>
 		</div>
 	);
