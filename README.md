@@ -1,4 +1,4 @@
-# Next.js + Jest
+# Next.js + Jest + Stryker + Cypress + MaterialUI + TailwindCSS
 
 ## Required
 * Node 16.x
