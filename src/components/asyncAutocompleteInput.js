@@ -63,7 +63,7 @@ export default function AsyncAutocompleteInput() {
 
 		(async () => {
 			const resources = await getData();
-
+			console.log(resources);
 			if (active) {
 				setOptions([...resources]);
 			}
