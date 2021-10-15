@@ -20,3 +20,9 @@ npm test
 ```bash
 npm test:mutation
 ```
+
+## Run Integration Tests
+
+```bash
+npm test:integration
+```
