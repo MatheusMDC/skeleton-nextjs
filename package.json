@@ -13,7 +13,12 @@
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
     "test:integration": "next start & cypress run",
-    "test:interface": "cypress open"
+    "test:open": "cypress open",
+    "mockserver:init": "docker run --name smockin -d -p 8000:8000 -p 8001:8001 mgallina/smockin:2160",
+    "mockserver:kill": "docker container rm smockin -f",
+    "mockserver:load": "./mockserver/seedmock.sh",
+    "mockserver:start": "./mockserver/start.sh",
+    "mockserver:stop": "./mockserver/stop.sh"
   },
   "dependencies": {
     "@azure/app-configuration": "^1.3.0",
